@@ -1,4 +1,5 @@
 import customtkinter as ctk
+import tkinter as tk
 
 
 root = ctk.CTk()
@@ -8,7 +9,8 @@ root.title('Calc by Kais')
 ctk.set_appearance_mode('dark')
 ctk.set_default_color_theme("dark-blue")
 root.configure(bg='#1f1f1f')
-root.wm_iconbitmap('icon.ico')
+icon = tk.PhotoImage(file="logo.png")  
+root.iconphoto(False, icon)
 
 def mode_menu(choice):
     pass
